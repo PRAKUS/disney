@@ -55,26 +55,26 @@ const ImageSlider = (props) => {
 	
     }
 
-    const prev = () => {
-		let img = slide.current;
-		let childWidth = img.clientWidth;
-		if (counter < img.children.length - 1) {
-			let newSlider = counter + 1;
+    // const prev = () => {
+	// 	let img = slide.current;
+	// 	let childWidth = img.clientWidth;
+	// 	if (counter < img.children.length - 1) {
+	// 		let newSlider = counter + 1;
 
-			img.style.transition = "all .5s";
-			img.style.transform = `translate(-${childWidth * newSlider}px)`;
-			setCounter(newSlider);
-		}
+	// 		img.style.transition = "all .5s";
+	// 		img.style.transform = `translate(-${childWidth * newSlider}px)`;
+	// 		setCounter(newSlider);
+	// 	}
 
-		if (counter === img.children.length - 2) {
-			setTimeout(() => {
-				img.style.transition = "none";
-				img.style.transform = `translate(-${childWidth})px`;
-				setCounter(1);
-			}, 502);
-		}
+	// 	if (counter === img.children.length - 2) {
+	// 		setTimeout(() => {
+	// 			img.style.transition = "none";
+	// 			img.style.transform = `translate(-${childWidth})px`;
+	// 			setCounter(1);
+	// 		}, 502);
+	// 	}
         
-	}
+	// }
 	
 	const indicatorBtn = (newSlider) => {
 		let img = slide.current;
@@ -112,9 +112,9 @@ const ImageSlider = (props) => {
 	// 	}
     // }
 
-    const auto = (delay) => {
-        setTimeout(prev(),delay)
-    }
+    // const auto = (delay) => {
+    //     setTimeout(prev(),delay)
+    // }
 
    
 
