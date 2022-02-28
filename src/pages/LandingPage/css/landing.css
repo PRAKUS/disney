@@ -1,0 +1,47 @@
+.landingContainer {
+	position: relative;
+}
+
+.landingOverlay {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingContent {
+	transition: all 0.5s;
+	width: 50%;
+}
+.landingButton {
+	width: 100%;
+	background-color: var(--blue);
+	border-radius: 5px;
+	color: var(--white);
+	border: none;
+	height: 7vh;
+	text-transform: uppercase;
+	font-size: 1.2vw;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.landingtext {
+	color: var(--white);
+	font-size: 1vw;
+	text-align: center;
+}
+
+@media (max-width: 650px) {
+	.landingContent {
+		transition: all 0.5s;
+		width: 80%;
+	}
+	.landingButton {
+		font-size: 3vw;
+	}
+}

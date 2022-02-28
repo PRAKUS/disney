@@ -1,0 +1,47 @@
+.gradientBackground {
+	background-image: radial-gradient(
+		closest-side at 50% 50%,
+		rgba(255, 255, 255, 0.2),
+		var(--black),
+		rgba(29, 36, 56, 0.712)
+	);
+
+	padding-bottom: 2%;
+}
+
+.titleText {
+	font-family: Avenir-Roman, sans-serif;
+	font-size: 2vw;
+	color: var(--lightergary);
+}
+
+.titleContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.titles {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.titlesItem {
+	max-width: 300px;
+	border-radius: 10px;
+}
+@media (max-width: 500px) {
+	.titles {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin: -5px -5px;
+	}
+	.titlesItem {
+		max-width: 160px;
+		border-radius: 10px;
+		flex: 1;
+		margin: 5px 5px;
+	}
+}
