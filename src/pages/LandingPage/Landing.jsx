@@ -20,7 +20,7 @@ const Landing = () => {
                     <img src="assets/images/cta-logo-one.svg" alt="landing" />
                     <button className='landingButton'>Get All There</button>
                     <p className='landingtext'>Get Premier Access to Raya and the Last Dragon for an additional fee with a Disney+ subscription.<br/> As of 03/26/21,the price of Disney+ and The Disney Bundle wiil increase by $1 </p>
-                    <img style={{width:"100%"}} src="assets/images/cta-logo-two.png" alt="imga"/>
+                    <img style={{width:"100%"}} src="assets/images/cta-logo-two.png" alt="landing"/>
                 </div>
               
             </div>
